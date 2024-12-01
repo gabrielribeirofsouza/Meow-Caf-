@@ -5,199 +5,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="O melhor café da região">
     <title>Meow Café</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    <div id="header-logo">
-        <img src="imagens/logo.png" alt="Meow Café">
-        <span>Meow Café</span>
+
+    <div id="container">
+
+        <header>
+
+        <div id="header-logo">
+            <img src="imagens/logo.png" alt="Meow Café">
+            <span>Meow Café</span>
             <nav>
                 <ul id="menu-header">
                     <a href="#">
                         <li>Inicio</li>
                     </a>
-
                     <a href="#produtos">
                         <li>Produtos</li>
                     </a>
-
                     <a href="#sobre">
                         <li>Sobre</li>
                     </a>
                 </ul>
             </nav>
-    </div>
-
-        <div id="buttons-header">
-            <button id="btn-login" class="btn-header"></button>
-            <button id="btn-delivery" class="btn-header"></button>
         </div>
         
+                <div id="buttons-header">
+                        <button id="btn-login" class="btn-header">Login</button>
+                        <button id="btn-delivery" class="btn-header">Delivery</button>
+                </div>
+        
     </header>
-    
+
     <section id="apresent">
+
         <div id="content-apresent">
-            <p>Sabor inesquecivel</p>
+            <p><span>Sabor inesquecivel</span></p>
             <h1>Meow Café</h1>
             <p>Um lugar perfeito para pais de pets e amantes de café. Nossa confeitaria tem um espaço confortável para você e seu melhor amigo</p>
         </div>
-
         <div id="img-apresent">
             <img src="imagens/header-img.png" alt="">
         </div>
     </section>
 
     <section id="coffe">
-        <h2>Cafés</h2>
-        <h3>Conheça nossos cafés exclusivos e pensados e preparados por nossos baristas renomados</h3>
-        <button>Veja todos > </button>
+            <h2>Cafés</h2>
+            <h3>Conheça nossos cafés exclusivos e pensados e preparados por nossos baristas renomados</h3>
 
-        <div id="coffe-cards">
+            <button id="btn-expandir">Veja todos > </button>
 
-            <div class="card" id="capuccino">
-                <img src="imagens/café/capuccino.png" alt="">
-                <span class="preco">
-                    R$ 24,00
-                </span>
-                <h2>Capuccino</h2>
-                <p>Café expresso, leite vaporizado, espuma e um toque de caramelo</p>
+            <div id="coffe-cards">
+
+                <div class="card" id="capuccino">
+                    <img src="imagens/café/capuccino.png" alt="">
+                    <span class="preco">
+                        R$ 24,00
+                    </span>
+                    <span>Capuccino</span>
+                    <p>Café expresso, leite vaporizado, espuma e um toque de caramelo</p>
+                    <button class="btn-card">
+                        Delivery
+                    </button>
+                </div>
+
+                <div class="card" id="cafeAoLeite">
+                    <img src="imagens/café/cafe-leite.png" alt="">
+                    <span class="preco">
+                        R$ 16,00
+                    </span>
+                    <span>Café ao Leite</span>
+                    <p>O clássico, amado pelos brasileiros, com um toque de sofisticação!</p>
+                    <button class="btn-card">
+                        Delivery
+                    </button>
+                </div>
+
+                <div class="card" id="cafePreto">
+                    <img src="imagens/café/cafe-preto.png" alt="">
+                    <span class="preco">
+                        R$ 12,00
+                    </span>
+                    <span>Café Preto</span>
+                    <p>Grãos selecionados feitos no seu metódo de preparo favorito</p>
+                    <button class="btn-card">
+                        Delivery
+                    </button>
+                </div>
+
+            </div>
+
+    </section>
+
+        <section id="croissant">
+
+            <div id="croissant-content">
+                <span id="croissant-preco">R$ 12,00</span>
+                <h2>Croissants</h2>
+                <h3>Conheça nossa receita</h3>
+                <p>A nossa receita de Croissant vai te surpreender. Croissnt clássicos ou recheados!</p>
                 <button class="btn-gen">
-                    Delivery
+                    Todos os croissants >
                 </button>
             </div>
-
-            <div class="card" id="cafeAoLeite">
-                <img src="imagens/café/cafe-leite.png" alt="">
-                <span class="preco">
-                    R$ 16,00
-                </span>
-                <h2>Café ao Leite</h2>
-                <p>O clássico, amado pelos brasileiros, com um toque de sofisticação!</p>
-                <button class="btn-card">
-                    Delivery
-                </button>
-            </div>
-
-            <div class="card" id="cafePreto">
-                <img src="imagens/café/cafe-preto.png" alt="">
-                <span class="preco">
-                    R$ 12,00
-                </span>
-                <h2>Café Preto</h2>
-                <p>Grãos selecionados feitos no seu metódo de preparo favorito</p>
-                <button class="btn-card">
-                    Delivery
-                </button>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="croissant">
-
-        <div id="crossaint-content">
-            <span id="crossaint-preco">R$ 12,00</span>
-            <h2>Croissants</h2>
-            <h3>Conheça nossa receita</h3>
-            <p>A nossa receita de Croissant vai te surpreender. Croissnt clássicos ou recheados!</p>
-            <button class="btn-gen">
-                Todos os croissants >
-            </button>
-        </div>
         
-        <div id="crossaint-img">
-            <img src="imagens/crossaint.png" alt="">
-        </div>
-
-    </section>
-
-    <section id="delivery-banner">
-
-        <div id="delivery-img">
-            <img src="imagens/delivery.png" alt="">
-        </div>
-
-        <div id="delivery-content">
-            <h2>Levamos até você</h2>
-            <h3>Estamos nos principais aplicativos de delivery</h3>
-            <button id="btn-delivery-content"></button>
-        </div>
-
-    </section>
-
-    <section id="sobre">
-        <div id="content-left">
-            <span>Sobre nós</span>
-            <p>Nós oferecemos uma experiência inesquecivel para amantes de café e pais de pet!</p>
-        </div>
-        <div id="content-right">
-            <h3>O melhor lugar para apreciar o seu café</h3>
-            <p>No Meow Café, priorizamos a criação de um espaço onde tanto os seres humanos quanto seus animais de estimação possa relaxar e desfrutar.</p>
-            <p>Nosso design interior é inspirado na harmonia e conforto, com sofás aconchegantes, iluminação suave e uma decoração que remete à natureza e à alegria que os animais trazem para nossas vidas.</p>
-        </div>
-    </section>
-
-    <section id="location">
-        <div id="location-reserva">
-            <h2>
-                Meow Enjoy
-            </h2>
-            <p>Todos os sábados e domingos</p>
-            <p>Venha tomar o seu brunch com a gente</p>
-            <button id="btn-gen"></button>
-        </div>
-
-        <div id="location-img">
-            <img src="imagens/loc-coffe.png" alt="">
-        </div>
-
-        <div id="location-content">
-            <h2>Onde estamos</h2>
-            <hr>
-            <p>Você pode nos encontrar no endereço :</p>
-            <address>icon Rua do Miado 234, Gatolândia</address>
-        </div>
-
-    </section>
-
-    <section id="contato">
-        <div id="info">
-                <span>Informações</span>
-                <p>Todos os direitos Reservados Meow Cafe Ltda.</p>
-                <p>Um lugar perfeito para pais de pets e amantes de café!</p>
-            <div id="icons-social">
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+            <div id="croissant-img">
+                <img src="imagens/crossaint.png" alt="">
             </div>
-        </div>
 
-        <div id="links">
-            <span>Links Úteis</span>
-            <ul id="link-list">
-                <li>Inicio</li>
-                <li>Sobre</li>
-                <li>Produtos</li>
-                <li>Delivery</li>
-                <li>Login</li>
-            </ul>
-        </div>
-        <div id="institucional">
-            <span>Institucional</span>
-            <ul id="instituto-info">
-                <li>CNPJ</li>
-                <li>Endereço</li>
-                <li>Politica de privacidade</li>
-                <li>Dúvidas Frequentes</li>
-                <li>Ajuda</li>
-                <li>Acessibilidade</li>
-            </ul>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <p>Desenvolvido por Gabriel R</p>
-    </footer>
+        <section id="delivery-banner">
+            <div id="delivery-img">
+                <img src="imagens/delivery.png" alt="">
+            </div>
+            <div id="delivery-content">
+                <h2>Levamos até você!</h2>
+                <h3>Estamos nos principais aplicativos de delivery</h3>
+                <button id="btn-delivery-content">Delivery</button>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div id="content-left">
+                <span>Sobre nós</span>
+                <p>Nós oferecemos uma experiência inesquecivel para amantes de café e pais de pet!</p>
+            </div>
+            <div id="content-right">
+                <span>O melhor lugar para apreciar o seu café</span>
+                <p>No Meow Café, priorizamos a criação de um espaço onde tanto os seres humanos quanto seus animais de estimação possa relaxar e desfrutar.</p> 
+                <p>Nosso design interior é inspirado na harmonia e conforto, com sofás aconchegantes, iluminação suave e uma decoração que remete à natureza e à alegria que os animais trazem para nossas vidas.</p>
+            </div>
+        </section>
+
+        <section id="location">
+            <div id="location-reserva">
+                <h2>
+                    Meow Enjoy
+                </h2>
+                <p>Todos os sábados e domingos</p>
+                <p>Venha tomar o seu brunch com a gente</p>
+                <button id="btn-gen"></button>
+            </div>
+            <div id="location-img">
+                <img src="imagens/loc-coffe.png" alt="">
+            </div>
+            <div id="location-content">
+                <h2>Onde estamos</h2>
+                <hr>
+                <p>Você pode nos encontrar no endereço :</p>
+                <address>icon Rua do Miado 234, Gatolândia</address>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div id="info">
+                    <span>Informações</span>
+                    <p>Todos os direitos Reservados Meow Cafe Ltda.</p>
+                    <p>Um lugar perfeito para pais de pets e amantes de café!</p>
+                <div id="icons-social">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div id="links">
+                <span>Links Úteis</span>
+                <ul id="link-list">
+                    <li>Inicio</li>
+                    <li>Sobre</li>
+                    <li>Produtos</li>
+                    <li>Delivery</li>
+                    <li>Login</li>
+                </ul>
+            </div>
+            <div id="institucional">
+                <span>Institucional</span>
+                <ul id="instituto-info">
+                    <li>CNPJ</li>
+                    <li>Endereço</li>
+                    <li>Politica de privacidade</li>
+                    <li>Dúvidas Frequentes</li>
+                    <li>Ajuda</li>
+                    <li>Acessibilidade</li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <p>Desenvolvido por Gabriel R</p>
+        </footer>
+    </div>
 </body>
 </html>
