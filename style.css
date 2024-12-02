@@ -317,3 +317,87 @@ header{
     max-width: 400px;
 
 }
+
+/*AREA LOCALIZAÇÃO*/
+#location{
+    border-radius: 10px;
+   display: grid;
+  background: linear-gradient(to right, #4D1D1D, #EB8E8E);
+   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px;
+  
+}
+#location-reserva{
+    display: flex;
+    flex-direction: column;
+   gap: 15px;
+   margin-left: 20px;
+    padding: 10px;
+}
+#location-reserva h2{
+    padding: 10px;
+    font-size: 4rem;
+    max-width: 200px;
+    line-height: 65px;
+    color: white;
+}
+#location-reserva span{
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+#location-reserva p{
+    font-size: 0.8rem;
+    color: white;
+    margin-bottom: 10px;
+}
+#location-reserva button{
+    text-align: left;
+    color: white;
+}
+#location-img img{
+    width: 100%;
+    transform: translateY(-80px);
+}
+#location-content{
+    padding: 10px;
+    display: flex;
+    margin-top: 5%;
+    gap: 15px;
+    flex-direction: column;
+}
+#location-content h2{
+    font-size: 2rem;
+    color: white;
+}
+#location-content > p, address{
+    color: white;
+}
+
+/*AREA CONTATO */
+#contato{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 150px;
+}
+#contato span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+#contato p{
+    max-width: 300px;
+    margin-bottom: 10px;
+    color: #3C0E0E;
+}
+#link-list, #instituto-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #3C0E0E;
+}
+footer{
+    text-align: center;
+    color: #3C0E0E;
+    margin-top: 20px;
+}
