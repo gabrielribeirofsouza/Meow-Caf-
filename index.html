@@ -17,7 +17,7 @@
             <img src="imagens/logo.png" alt="Meow Café">
             <span>Meow Café</span>
             <nav>
-                <ul id="menu-header">
+                <ul id="menu-header" class="hide">
                     <a href="#">
                         <li>Inicio</li>
                     </a>
@@ -41,9 +41,9 @@
     <section id="apresent">
 
         <div id="content-apresent">
-            <p><span>Sabor inesquecivel</span></p>
+            <h3>Sabor inesquecivel</h3>
             <h1>Meow Café</h1>
-            <p id="gambiarra-mobile">Um lugar perfeito para pais de pets e amantes de café. Nossa confeitaria tem um espaço confortável para você e seu melhor amigo</p>
+            <p>Um lugar perfeito para pais de pets e amantes de café. Nossa confeitaria tem um espaço confortável para você e seu melhor amigo</p>
         </div>
         <div id="img-apresent">
             <img src="imagens/header-img.png" alt="">
@@ -101,9 +101,9 @@
         <section id="croissant">
 
             <div id="croissant-content">
-                <span id="croissant-preco">R$ 12,00</span>
+                <span id="croissant-preco" class="hide">R$ 12,00</span>
                 <h2>Croissants</h2>
-                <h3>Conheça nossa receita</h3>
+                <h3 class="hide">Conheça nossa receita</h3>
                 <p>A nossa receita de Croissant vai te surpreender. Croissnt clássicos ou recheados!</p>
                 <button class="btn-gen">
                     Todos os croissants >
@@ -117,23 +117,23 @@
         </section>
 
         <section id="delivery-banner">
-            <div id="delivery-img">
+            <div id="delivery-img" class="hide">
                 <img src="imagens/delivery.png" alt="">
             </div>
             <div id="delivery-content">
                 <h2>Levamos até você!</h2>
                 <h3>Estamos nos principais aplicativos de delivery</h3>
-                <button id="btn-delivery-content">Delivery</button>
             </div>
+            <button id="btn-delivery-content">Delivery</button>
         </section>
 
         <section id="sobre">
             <div id="content-left">
                 <span>Sobre nós</span>
                 <p>Nós oferecemos uma experiência inesquecivel para amantes de café e pais de pet!</p>
+                <span>O melhor lugar para apreciar o seu café</span>
             </div>
             <div id="content-right">
-                <span>O melhor lugar para apreciar o seu café</span>
                 <p>No Meow Café, priorizamos a criação de um espaço onde tanto os seres humanos quanto seus animais de estimação possa relaxar e desfrutar.</p> 
                 <p>Nosso design interior é inspirado na harmonia e conforto, com sofás aconchegantes, iluminação suave e uma decoração que remete à natureza e à alegria que os animais trazem para nossas vidas.</p>
             </div>
@@ -146,10 +146,12 @@
                 </h2>
                 <span>Todos os sábados e domingos</span>
                 <p>Venha tomar o seu brunch com a gente</p>
-                <button class="btn-gen">Faça uma reserva ></button>
-            </div>
-            <div id="location-img">
-                <img src="imagens/loc-coffe.png" alt="">
+
+                <div id="reserva"><button class="btn-gen">Faça uma reserva ></button>
+                    <div id="location-img">
+                        <img src="imagens/loc-coffe.png" alt="">
+                    </div>
+                </div>
             </div>
             <div id="location-content">
                 <h2>Onde estamos</h2>
