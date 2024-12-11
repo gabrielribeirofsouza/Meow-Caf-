@@ -325,7 +325,8 @@ footer{
     padding: 10px;
   
 }
-@media (min-width: 768px) {
+
+@media (min-width: 1024px) {
     #header-logo > img{
         width: 160px;
     }
@@ -363,72 +364,7 @@ footer{
         position: relative;
         right: 120px;
     }
-    #coffe-cards{
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 30px;
-        justify-content: center;
-        align-items: center;
-    }
-    #cafePreto{
-       grid-column: 1/ -1;
-       justify-self: center;
-    }
-    .card{
-        width: 300px;
-    }
-    #delivery-banner{
-        width: calc(100% - 10%);
-    }
-  
-    #btn-delivery-content{
-        font-size: 24px;
-        
-    }
-    #sobre{
-        width: 700px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-    }
-    #content-left{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      
-    }
-
-    #location{
-        padding: 0px;
-        width: 700px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    #location-img{
-        align-self: flex-end;
-    }
-    #location-reserva{
-        padding: 10px;
-    }
-    #location-content{
-        columns: -1;
-        height: 400px;
-        transform: translateY(-1px);
-        border-radius: 10px;
-        justify-self: end;
-        
-    }
-
-    #contato{
-        display: grid;
-        width: calc(100% - 10%);
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 50px;
-    }
-}
-
-@media (min-width: 1024px) {
+    
     #container{
         max-width: 1200px;
         margin: 0 auto;
@@ -445,15 +381,7 @@ footer{
         font-weight: 400;
         color: #3c0e0e;        
     }
-    #content-apresent > h3{
-        font-size: 24px;
-    }
-    #content-apresent > h1{
-        line-height: 60px;
-    }
-    #content-apresent > p{
-        font-size: 18px;
-    }
+   
     #coffe{
         width: 100%;
     }
@@ -509,9 +437,9 @@ footer{
     #delivery-banner{
         width: 100%;
         margin-top: 150px;
-        height: 300px;
+        height: 350px;
        display: grid;
-       grid-template-columns: 1fr 1fr;
+       grid-template-columns: 1fr 400px;
     }
     #delivery-img{
         display: block;
@@ -521,7 +449,7 @@ footer{
     }
     #delivery-content{
       align-self: flex-start;
-      margin-top: 5%;
+        transform: translateY(-30px);
     }
     #delivery-content > h2{
         text-align: left;
@@ -539,7 +467,7 @@ footer{
     #btn-delivery-content{
         width: 300px;
         font-size: 20px;
-        margin-top: 30px;
+       
         
     }
     #sobre{
@@ -567,7 +495,8 @@ footer{
         width: 100%;
        display: grid;
        height: 500px;
-       grid-template-columns: 400px 200px 200px;
+       grid-template-columns: 400px 1fr 1fr;
+      
     }
     #location-reserva{
         grid-column: 1;
@@ -576,22 +505,23 @@ footer{
         gap: 40px;
     }
     #location-img{
-       grid-column: 2 / 3;
+       grid-column: 3;
+     
        width: 600px;
        
     }
     #location-img > img {
+        transform: translate(300px, -500px);
         width: 100%;
-        transform: translateY(-60px);
-        position: relative;
-        right: 100px;
+       
     }
 
     #location-content{
-        grid-column: 4;
+        grid-column: -1;
         height: 500px;
+        transform: translate(10px, -242px);
         border-radius: 0px 10px 10px 0px;
-        transform: translateY(-21px);
+        
     }
     #location-reserva > h2{
         font-size: 64px;
@@ -603,5 +533,15 @@ footer{
     }
     #location-reserva > p{
         color: white;
+    }
+    #contato{
+        margin-top: 100px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+       gap: 50px;
+    }
+    footer{
+        transform: translateY(50px);
     }
 }
