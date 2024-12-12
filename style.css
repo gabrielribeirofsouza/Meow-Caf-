@@ -57,7 +57,7 @@ header{
     z-index: -999999999;
     grid-column: 1;
     grid-row: 1;
-   transform: translateY(-90px);
+   transform: translate(25px, -90px);
 
 }
 #imagem-header-mobile{
@@ -334,7 +334,11 @@ footer{
     padding: 10px;
   
 }
-
+@media (min-width: 428px){
+    #img-apresent{
+        transform: translate(40px, -90px);
+    }
+}
 @media (min-width: 1024px) {
     #imagem-header-mobile{
         display: none;
